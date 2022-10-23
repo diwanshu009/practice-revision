@@ -1,6 +1,6 @@
 import java.util.*;
 public class DSA{
-    //Array's Baiscs
+    //Array's Basics
     public static void print(int arr[]){
         for(int i=0;i<arr.length;i++){
             System.out.print(arr[i] + " ");
@@ -520,7 +520,7 @@ public class DSA{
         int temp = arr[n-i-1];
         arr[n-i-1] = arr[i];
         arr[i] = temp;
-        reverseRecursion(i+1, arr);
+        reverseArrayRecursion(i+1, arr);
     }
     public static boolean palindromeRecursion(int i,String str){
         if(i >= str.length()/2){
