@@ -16,13 +16,10 @@ public class DSA{
         }
         return smallest; 
     }
-    public static int max(){
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int num[] = new int[n];
+    public static int max(int num[]){
+        int n = num.length;
         int largest = Integer.MIN_VALUE;
         for(int i=0;i<n;i++){
-            num[i] = sc.nextInt();
             if(num[i] > largest){
                 largest = num[i];
             }
